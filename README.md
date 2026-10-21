@@ -11,7 +11,7 @@
 
 ## 👋 Hello, world!
 
-Welcome to my first GitHub Markdown page!
+Welcome to my GitHub Markdown page!
 
 This page is part of the **Cyber Security 2026** course.
 The purpose of this exercise is to explore GitHub,
@@ -50,14 +50,6 @@ Commands such as `git status` can be formatted
 using **inline code**, while longer examples
 use fenced code blocks.
 
-## 🔄 Version Control Workflow
-
-```mermaid
-flowchart LR
-    A["📝 Edit"] --> B["✅ Commit"]
-    B --> C["☁️ GitHub"]
-    C --> D["🔍 Review"]
-```
 
 ## 🎯 What I learned
 

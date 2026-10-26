@@ -151,7 +151,6 @@ Healthcare staff need timely access to relevant patient information, so complete
 4. Transparent access governance so that both staff and patients understand how access is logged and reviewed, in line with privacy requirements and policy.
 
 Expected result: lower likelihood of unauthorised access, earlier detection of misuse, and reduced potential harm. Actual effectiveness would need to be tested and measured in practice.
----
 
 ---
 

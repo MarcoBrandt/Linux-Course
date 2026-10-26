@@ -151,8 +151,89 @@ Healthcare staff need timely access to relevant patient information, so complete
 4. Transparent access governance so that both staff and patients understand how access is logged and reviewed, in line with privacy requirements and policy.
 
 Expected result: lower likelihood of unauthorised access, earlier detection of misuse, and reduced potential harm. Actual effectiveness would need to be tested and measured in practice.
+---
 
-**Related but separate privacy issue:** Physical documents also need secure handling. In April 2026 HUS reported that two paper sheets containing information on 36 people had accidentally been left in a public location and were recovered about 20 minutes later. HUS did not know whether outsiders had seen them. This is an unintentional information-handling risk, not the same as the malicious-insider scenario scored above. [HUS, 9 April 2026](https://www.hus.fi/ajankohtaista/husissa-selvitetty-alkuvuonna-kolmea-henkilotietojen-tietoturvaloukkausta).
+---
+
+## e) Installing a Debian Virtual Machine on CachyOS
+
+### 1. Install QEMU/KVM and Virt-Manager
+
+```bash
+sudo pacman -Syu qemu-full virt-manager swtpm dnsmasq
+```
+
+### 2. Enable virtualization in BIOS/UEFI
+
+- **AMD:** SVM Mode → Enabled
+- **Intel:** Intel Virtualization Technology → Enabled
+
+### 3. Configure libvirt
+
+```bash
+sudo sed -i '/^[[:space:]]*#?[[:space:]]*firewall_backend[[:space:]]*=/d' /etc/libvirt/network.conf
+echo 'firewall_backend = "iptables"' | sudo tee -a /etc/libvirt/network.conf
+sudo usermod -aG libvirt "$USER"
+```
+
+### 4. Enable services and networking
+
+```bash
+sudo systemctl enable --now virtqemud.socket virtnetworkd.socket
+sudo virsh -c qemu:///system net-autostart default
+sudo virsh -c qemu:///system net-start default
+```
+
+If the default network is already active, the final command may report that it is already running. Log out and back in to apply the new group membership.
+
+### 5. Download Debian
+
+Download the **64-bit PC netinst ISO (amd64)** from the [official Debian download page](https://www.debian.org/distrib/netinst). The netinst ISO downloads additional packages during installation, so an internet connection is needed.
+
+### 6. Create the virtual machine
+
+Open Virt-Manager:
+
+```bash
+virt-manager
+```
+
+Choose **QEMU/KVM → Create a new virtual machine → Local install media (ISO)**, then select the Debian ISO.
+
+| Setting | Recommended value |
+|---|---|
+| Operating system | Debian |
+| CPU | 4 vCPUs |
+| RAM | 4096–8192 MiB |
+| Virtual disk | 60 GiB |
+| Network | NAT (default) |
+
+Start the virtual machine and follow the Debian installer.
+
+### 7. Verify KVM acceleration
+
+```bash
+lsmod | grep kvm
+ls -l /dev/kvm
+```
+
+The KVM kernel module and `/dev/kvm` device should be present for hardware-assisted virtualization.
+
+---
+
+## f) Voluntary Bonus: Technical Puzzle
+
+The provided string is:
+
+```text
+==gCh8mclRFIs8GbsVGS
+```
+
+The string is reversed. First reverse it with `rev`, then decode it using Base64:
+
+```bash
+echo -n '==gCh8mclRFIs8GbsVGS' | rev | base64 -d
+```
 
 ---
 
@@ -167,5 +248,3 @@ Expected result: lower likelihood of unauthorised access, earlier detection of m
 7. HUS. *About us*. https://www.hus.fi/en/about-us
 8. HUS (4 December 2024). *Kaksi HUSin työntekijää katseli luvatta tietoja*. https://www.hus.fi/ajankohtaista/kaksi-husin-tyontekijaa-katseli-luvatta-tietoja
 9. HUS (9 April 2026). *HUSissa selvitetty alkuvuonna kolmea henkilötietojen tietoturvaloukkausta*. https://www.hus.fi/ajankohtaista/husissa-selvitetty-alkuvuonna-kolmea-henkilotietojen-tietoturvaloukkausta
-10. HUS (3 September 2026). *Apotin omistajien tilaama arvio on valmistunut*. https://www.hus.fi/ajankohtaista/apotin-omistajien-tilaama-arvio-valmistunut-arvioijat-suosittelevat-jarjestelman
-```

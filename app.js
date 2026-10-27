@@ -28,9 +28,10 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
 
 function overview(){
   const ready=tasks.filter(t=>t.file);
-  return `<div class="eyebrow">SECURITY RESEARCH / DOCUMENTATION / LABS</div>
-  <h1 class="hero-title">Learn. Break down.<br><span class="highlight">Secure better.</span></h1>
-  <p class="hero-description">A living collection of cybersecurity coursework, technical experiments and research notes. Built with curiosity, documented with precision.</p>
+  
+return `<div class="eyebrow">HAAGA-HELIA / CYBER SECURITY 2026</div>
+  <h1 class="hero-title">Cybersecurity<br><span class="highlight">Studies.</span></h1>
+  <p class="hero-description">My coursework, notes and practical exercises in cybersecurity. Learning through research and hands-on experience.</p>
   <div class="hero-actions"><a class="btn btn-primary" href="#h1">Explore assignments <span>↗</span></a><a class="btn btn-ghost" href="https://github.com/MarcoBrandt/Linux-Course" target="_blank" rel="noopener noreferrer">Source repository <span>↗</span></a></div>
   <div class="metrics"><div class="metric"><div class="metric-kicker">ASSIGNMENTS PUBLISHED</div><div class="metric-value">${String(ready.length).padStart(2,'0')} <small>/ 09</small></div></div><div class="metric"><div class="metric-kicker">CURRENT MODULE</div><div class="metric-value">H1 <small>CYBERSCIENCE</small></div></div><div class="metric"><div class="metric-kicker">ACADEMIC TERM</div><div class="metric-value">2026 <small>AUTUMN</small></div></div></div>
   <div class="section-top"><div><div class="section-label">// THE ARCHIVE</div><h2 class="section-title">Assignment library</h2></div><span class="section-note">${ready.length} PUBLISHED · ${tasks.length-ready.length} UPCOMING</span></div>

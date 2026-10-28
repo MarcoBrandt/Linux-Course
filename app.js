@@ -35,7 +35,7 @@ function overview(){
   <div class="section-top"><div><div class="section-label">// THE ARCHIVE</div><h2 class="section-title">Assignment library</h2></div><span class="section-note">${ready.length} PUBLISHED · ${tasks.length-ready.length} UPCOMING</span></div>
   <div class="cards">${tasks.map(t=>`<${t.file?'a':'div'} class="assignment-card ${t.file?'':'future'}" ${t.file?`href="#${t.id}"`:''}><div class="card-top"><span class="card-index">// ${t.id.toUpperCase()}</span><span class="card-badge ${t.file?'':'soon'}">${t.file?'PUBLISHED':'COMING SOON'}</span></div><h3>${escapeHtml(t.name)}</h3><p>${escapeHtml(t.detail)}</p><span class="card-arrow">${t.file?'OPEN REPORT ↗':'AWAITING RELEASE ···'}</span></${t.file?'a':'div'}>`).join('')}</div>`;
 }
-async function render(){Moss
+async function render(){
   const route=(window.location.hash||'#home').slice(1).split('/')[0];
   const task=tasks.find(t=>t.id===route && t.file);
   const selected=task?task.id:'home';
@@ -61,12 +61,6 @@ async function render(){Moss
 }
 window.addEventListener('hashchange',render);
 render();
-
-.metric-value:has(small) small {
-  display: block;
-  margin-top: 8px;
-  line-height: 1.5;
-}
 
 // Secret 1997 theme — no changes to the assignment router.
 (() => {

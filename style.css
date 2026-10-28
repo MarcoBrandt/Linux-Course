@@ -36,3 +36,21 @@
   margin-top: 8px;
   line-height: 1.5;
 }
+/* Fix mobile sidebar overlay */
+@media (max-width: 850px) {
+  .layout {
+    isolation: isolate;
+  }
+
+  .sidebar {
+    z-index: 1001 !important;
+  }
+
+  .scrim {
+    z-index: 1000 !important;
+  }
+
+  .scrim.open {
+    background: rgba(0, 0, 0, 0.65);
+  }
+}

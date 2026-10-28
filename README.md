@@ -17,6 +17,8 @@ This page is part of the **Cyber Security 2026** course.
 The purpose of this exercise is to explore GitHub,
 Markdown formatting and the fundamentals of version control.
 
+This is also visible on the webside: https://marcobrandt.github.io/Linux-Course/#home
+
 > Security begins with understanding the systems we use.
 
 ## 🔐 Information Security

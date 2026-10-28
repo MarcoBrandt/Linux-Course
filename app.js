@@ -31,11 +31,11 @@ function overview(){
   <h1 class="hero-title">Cybersecurity<br><span class="highlight">Studies.</span></h1>
   <p class="hero-description">My coursework, notes and practical exercises in cybersecurity. Learning through research and hands-on experience.</p>
   <div class="hero-actions"><a class="btn btn-primary" href="#${latest?.id || 'home'}">Explore assignments <span>↗</span></a><a class="btn btn-ghost" href="https://github.com/MarcoBrandt/Linux-Course" target="_blank" rel="noopener noreferrer">Source repository <span>↗</span></a></div>
-  <div class="metrics"><div class="metric"><div class="metric-kicker">ASSIGNMENTS PUBLISHED</div><div class="metric-value">${String(ready.length).padStart(2,'0')} <small>/ ${String(tasks.length).padStart(2,'0')}</small></div></div><div class="metric"><div class="metric-kicker">CURRENT MODULE</div><div class="metric-value">${latest ? latest.id.toUpperCase() : "—"} <small>${latest ? escapeHtml(latest.name.toUpperCase()) : "NO MODULE"}</small></div></div><div class="metric"><div class="metric-kicker">ACADEMIC TERM</div><div class="metric-value">2026 <small>AUTUMN</small></div></div></div>
+  <div class="metrics"><div class="metric"><div class="metric-kicker">ASSIGNMENTS PUBLISHED</div><div class="metric-value">${String(ready.length).padStart(2,'0')} <small>/ ${String(tasks.length).padStart(2,'0')}</small></div></div><div class="metric"><div class="metric-kicker">LATEST MODULE</div><div class="metric-value">${latest ? latest.id.toUpperCase() : "—"} <small>${latest ? escapeHtml(latest.name.toUpperCase()) : "NO MODULE"}</small></div></div><div class="metric"><div class="metric-kicker">ACADEMIC TERM</div><div class="metric-value">2026 <small>AUTUMN</small></div></div></div>
   <div class="section-top"><div><div class="section-label">// THE ARCHIVE</div><h2 class="section-title">Assignment library</h2></div><span class="section-note">${ready.length} PUBLISHED · ${tasks.length-ready.length} UPCOMING</span></div>
   <div class="cards">${tasks.map(t=>`<${t.file?'a':'div'} class="assignment-card ${t.file?'':'future'}" ${t.file?`href="#${t.id}"`:''}><div class="card-top"><span class="card-index">// ${t.id.toUpperCase()}</span><span class="card-badge ${t.file?'':'soon'}">${t.file?'PUBLISHED':'COMING SOON'}</span></div><h3>${escapeHtml(t.name)}</h3><p>${escapeHtml(t.detail)}</p><span class="card-arrow">${t.file?'OPEN REPORT ↗':'AWAITING RELEASE ···'}</span></${t.file?'a':'div'}>`).join('')}</div>`;
 }
-async function render(){
+async function render(){Moss
   const route=(window.location.hash||'#home').slice(1).split('/')[0];
   const task=tasks.find(t=>t.id===route && t.file);
   const selected=task?task.id:'home';
@@ -62,6 +62,11 @@ async function render(){
 window.addEventListener('hashchange',render);
 render();
 
+.metric-value:has(small) small {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.5;
+}
 
 // Secret 1997 theme — no changes to the assignment router.
 (() => {

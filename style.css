@@ -36,21 +36,26 @@
   margin-top: 8px;
   line-height: 1.5;
 }
-/* Fix mobile sidebar overlay */
+/* Mobile navigation overlay fix */
 @media (max-width: 850px) {
+
   .layout {
-    isolation: isolate;
+    isolation: auto;
+    z-index: auto;
   }
 
   .sidebar {
-    z-index: 1001 !important;
-  }
-
-  .scrim {
-    z-index: 1000 !important;
+    position: fixed;
+    z-index: 9999 !important;
+    opacity: 1 !important;
+    filter: none !important;
   }
 
   .scrim.open {
+    position: fixed;
+    inset: 0;
+    z-index: 9998 !important;
     background: rgba(0, 0, 0, 0.65);
   }
+
 }

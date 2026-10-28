@@ -60,3 +60,33 @@ async function render(){
 }
 window.addEventListener('hashchange',render);
 render();
+
+
+// Secret 1997 theme — no changes to the assignment router.
+(() => {
+  const button = document.getElementById('retro-toggle');
+  const label = document.getElementById('retro-toggle-label');
+  const key = 'marco-cyber-theme';
+  if (!button || !label) return;
+  const setTheme = (retro) => {
+    document.documentElement.classList.toggle('theme-90s', retro);
+    button.setAttribute('aria-pressed', String(retro));
+    button.setAttribute('aria-label', retro ? 'Return to original theme' : 'Activate hidden 1990s theme');
+    label.textContent = retro ? 'BACK TO THE FUTURE ↗' : 'SYSTEM VERSION 1.997_';
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', retro ? '#c0c0c0' : '#080c15');
+    try { localStorage.setItem(key, retro ? '90s' : 'original'); } catch (_) {}
+  };
+  let saved = false;
+  try { saved = localStorage.getItem(key) === '90s'; } catch (_) {}
+  setTheme(saved);
+  button.addEventListener('click', () => {
+    const retro = !document.documentElement.classList.contains('theme-90s');
+    setTheme(retro);
+    if (retro && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.body.classList.remove('retro-flash');
+      void document.body.offsetWidth;
+      document.body.classList.add('retro-flash');
+      window.setTimeout(() => document.body.classList.remove('retro-flash'), 600);
+    }
+  });
+})();

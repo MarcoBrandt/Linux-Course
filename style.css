@@ -31,3 +31,8 @@
 .theme-90s .main-footer{background:#c0c0c0;border-top:3px ridge #fff;color:#000080}
 @keyframes retro-blink{50%{visibility:hidden}}@keyframes retro-flash{0%,35%{filter:brightness(2.5)}65%{filter:brightness(.7)}100%{filter:none}}.retro-flash{animation:retro-flash .55s steps(3)}
 @media(prefers-reduced-motion:reduce){.theme-90s .retro-blink,.theme-90s .nav-tag,.theme-90s .retro-bottom span:first-child{animation:none}}
+.metric-value:has(small) small {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.5;
+}

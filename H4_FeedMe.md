@@ -107,8 +107,6 @@ The access log showed many requests from `127.0.0.1`, including `GET`, `POST`, `
 
 ![Nmap HTTP requests in Apache access log](images/ApacheNmap.png)
 
-![Apache access and error log evidence](images/AccessError.png)
-
 ## h) Changing the scanning method (optional)
 
 I compared the previous `-A` scan with a TCP SYN scan that did not run HTTP service-detection scripts:
@@ -122,6 +120,8 @@ sudo tail -n 10 /var/log/apache2/error.log
 The SYN scan found **80/tcp** and **631/tcp** open, completing in **0.09 seconds**. The subsequent Apache log check showed no new HTTP entries associated with this scan.
 
 ![SYN scan of ports 80 and 631](images/NmappingPorts.png)
+
+![Apache access and error log evidence](images/AccessError.png)
 
 This demonstrates that a SYN scan may avoid the **HTTP application-log detection method** used in part g. It does **not** mean the scan is invisible: firewalls and network monitoring tools can still detect the network traffic.
 

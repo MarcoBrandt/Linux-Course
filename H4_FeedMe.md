@@ -62,19 +62,56 @@ Overall, RSS is a useful way to follow the field, but I need to filter what I re
 
 ## f) Port scanning localhost with Nmap
 
-I used my **Debian 13 virtual machine** for the port-scanning exercises. I installed Nmap 7.95 and Apache HTTP Server. The assignment calls for disconnecting the virtual machine from the internet during the localhost scan; I used only `localhost` (`127.0.0.1`) as the scan target.
+I used my **Debian 13 virtual machine** for the port-scanning exercises. I installed Nmap 7.95 and Apache HTTP Server.
+
+First, I installed the required software:
 
 ```bash
 sudo apt update
 sudo apt install nmap apache2 -y
 nmap --version
+```
+
+### Disconnecting from the Internet
+
+Before scanning, I disconnected my virtual machine from the internet using the terminal:
+
+```bash
+ip -br link
+sudo ip link set enp1s0 down
+ping -c 4 8.8.8.8
+```
+
+The ping command returned **Network is unreachable**, confirming that the network connection was disabled.
+
+I also verified that localhost could still be scanned without an internet connection:
+
+```bash
+sudo nmap -sS -p 80,631 localhost
+```
+
+Both ports, **80/tcp** and **631/tcp**, were open during this test.
+
+![Internet disconnected and localhost scan](images/LinkState.png)
+
+After the test, I re-enabled the network interface:
+
+```bash
+sudo ip link set enp1s0 up
+```
+
+### Port Scanning Before and After Starting Apache
+
+I stopped Apache and scanned localhost (`127.0.0.1`):
+
+```bash
 sudo systemctl stop apache2
 sudo nmap -A -v localhost
 ```
 
 With Apache stopped, Nmap reported **631/tcp open** (CUPS) and **999 other scanned TCP ports closed**.
 
-Next I started Apache and repeated the scan:
+Next, I started Apache and repeated the scan:
 
 ```bash
 sudo systemctl start apache2
@@ -92,7 +129,11 @@ Nmap now identified **80/tcp open** (Apache httpd 2.4.69) and **631/tcp open** (
 
 ![Nmap identifies Apache and CUPS](images/NmapApache.png)
 
-Starting Apache made a new open port visible to Nmap. This shows how a running service changes a system's exposed network surface.
+### Results
+
+Starting Apache made a new open port visible to Nmap. This shows how running services affect a system's exposed network surface.
+
+The offline test also demonstrated that **localhost can be scanned without an internet connection**. All scans were performed against my own virtual machine.
 
 ## g) Detecting the scan in Apache logs (optional)
 

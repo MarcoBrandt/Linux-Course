@@ -48,8 +48,6 @@ I added Schneier on Security for broader perspectives on security, privacy, tech
 
 I also followed **BleepingComputer** for current security news. The Liferea screenshot confirms that this subscription was added.
 
-*Note: The screenshot does not show NCSC-FI or SecurityWeek subscriptions. Their selection and reasons are documented here, but they should be added to Liferea before claiming they were tested.*
-
 ## e) Benefits and disadvantages of RSS
 
 ### Benefits

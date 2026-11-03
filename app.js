@@ -5,7 +5,7 @@ const tasks = [
   {id:'h2',name:'Current Cybersecurity Scene',detail:'Podcast, threat landscape and research',file:'H2_scene.md'},
   {id:'h3',name:'Linux & Password Cracking',detail:'Debian 13, Hashcat and John the Ripper Jumbo',file:'H3_Cyberlab.md'},
   {id:'h4',name:'Feed Me',detail:'RSS feeds, Nmap and port scanning',file:'H4_FeedMe.md'},
-  {id:'h5',name:'Assignment 05',detail:'Upcoming course assignment',file:null},
+  {id:'h5',name:'Alice and Bob',detail:'Upcoming course assignment',file:'H5_AliceAndBob.md'},
   {id:'h6',name:'Assignment 06',detail:'Upcoming course assignment',file:null},
   {id:'h7',name:'Assignment 07',detail:'Upcoming course assignment',file:null},
   {id:'h8',name:'Assignment 08',detail:'Upcoming course assignment',file:null}

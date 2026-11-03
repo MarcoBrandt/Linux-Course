@@ -59,3 +59,32 @@
   }
 
 }
+
+
+/* Game Boy-inspired Tetris: isolated overlay; existing content stays intact. */
+.tetris-toggle{width:calc(100% - 40px);margin:0 20px 10px;padding:11px 12px;background:#182d29;color:#a5f2ce;border:1px solid #437968;border-radius:7px;font:700 11px var(--mono);letter-spacing:1px;cursor:pointer;text-align:left}
+.tetris-toggle:hover,.tetris-toggle:focus-visible{background:#295344;border-color:#83f0c9}
+.tetris-toggle span:last-child{float:right}
+.tetris-overlay[hidden]{display:none!important}
+.tetris-overlay{position:fixed;top:77px;left:var(--sidebar);right:0;bottom:0;z-index:8;background:rgba(5,13,16,.96);overflow-y:auto;display:flex;align-items:center;justify-content:center;padding:24px}
+.tetris-console{width:min(100%,570px);padding:18px 24px 26px;border:3px solid #414b3c;border-radius:18px 18px 48px 18px;background:linear-gradient(155deg,#d6d6c5,#a8aa9e);box-shadow:0 18px 80px #000a,inset 3px 3px #f2f1e5,inset -4px -4px #858879;color:#303d30;font-family:var(--mono)}
+.tetris-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:13px;font-weight:900;letter-spacing:1.3px;font-size:16px}
+.tetris-heading small{font-size:9px;font-weight:600;display:block;letter-spacing:2px;color:#63695f}
+.tetris-console button{cursor:pointer}
+.tetris-close{border:1px solid #677066;background:#d5d6c9;color:#253b30;border-radius:6px;padding:7px 11px;font:700 12px var(--mono)}
+.tetris-screen{background:#56645a;border:10px solid #414e4c;border-radius:9px 9px 30px 9px;padding:12px;display:flex;justify-content:center;gap:12px;box-shadow:inset 0 0 15px #1d2927}
+#tetris-board{display:block;width:min(100%,240px);height:auto;max-height:calc(100vh - 250px);object-fit:contain;border:3px solid #344a37;background:#a6ba76;image-rendering:pixelated;aspect-ratio:1/2}
+.tetris-stats{width:115px;min-width:95px;display:flex;flex-direction:column;gap:12px;font-size:12px;font-weight:800;color:#263a2d}
+.tetris-stats label{display:block;font-size:10px;letter-spacing:1px;margin-bottom:4px}
+.tetris-stats strong{font-size:17px}
+#tetris-next{width:95px;max-width:100%;height:auto;border:2px solid #344a37;image-rendering:pixelated}
+#tetris-status{font-size:10px;letter-spacing:0}
+.tetris-actions{display:flex;justify-content:center;gap:12px;margin:16px 0 7px}
+.tetris-actions button,.tetris-controls button{background:#455146;border:2px solid #27362b;box-shadow:2px 3px #7e8377;color:#e1ead7;border-radius:8px;padding:10px 14px;font:700 12px var(--mono);touch-action:manipulation}
+.tetris-actions button:active,.tetris-controls button:active{transform:translate(1px,2px);box-shadow:none}
+.tetris-controls{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:11px 0}
+.tetris-controls button{min-width:46px;font-size:15px;touch-action:none}
+.tetris-help{text-align:center;color:#454f45;font-size:10px;line-height:1.6;margin:9px 0 0}
+.theme-90s .tetris-toggle{background:#a2bb7a;border:3px outset #eee;color:#192a16;border-radius:0}
+@media(max-width:850px){.tetris-overlay{left:0;top:67px;z-index:12;padding:10px}.tetris-console{padding:12px 12px 16px}.tetris-screen{border-width:7px;padding:8px;gap:8px}.tetris-stats{width:90px;min-width:80px;font-size:10px}.tetris-stats strong{font-size:14px}}
+@media(max-width:420px){.tetris-overlay{align-items:flex-start}.tetris-console{border-radius:12px 12px 30px 12px}.tetris-screen{gap:7px}#tetris-board{width:min(54vw,200px);max-height:none}.tetris-stats{min-width:74px;width:74px;gap:8px}.tetris-heading{font-size:13px}.tetris-controls button{min-width:40px;padding:8px 10px}.tetris-help{font-size:9px}}

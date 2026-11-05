@@ -41,9 +41,19 @@ This report covers Linux command-line basics, installation of a Debian virtual m
 
 ## b) Linux — Debian 13 (Trixie)
 
-I had already downloaded and installed **Debian 13 (Trixie)** in a virtual machine before completing these password exercises. I used the VM's terminal to install the required tools and run the commands below.
+I installed Debian 13 (Trixie) on a virtual machine using Virtual Machine Manager (virt-manager) on my CachyOS Linux computer.
 
-I installed `fastfetch` to display the operating system and hardware details:
+Installation
+
+1.  Downloaded the Debian 13 installation image from the official Debian website.
+2.  Created a new virtual machine using Virtual Machine Manager (KVM/QEMU).
+3.  Selected the Debian installation ISO and configured the virtual machine.
+4.  Installed Debian 13 on the virtual disk.
+5.  Restarted the virtual machine and verified that Debian was working.
+
+System verification
+
+After installation, I opened the terminal and installed Fastfetch to display information about the operating system and virtual hardware.
 
 ```bash
 sudo apt update

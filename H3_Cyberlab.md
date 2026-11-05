@@ -44,7 +44,9 @@ This report covers Linux command-line basics, installation of a Debian virtual m
 
 ## a) Presentation Title in Moodle
 
-**Status:** Not yet confirmed in this report. The presentation title must be reserved in Moodle; this step does not require a computer test report.
+Cybersecurity in Hospitals - 2026-11-04 w45 Wed
+
+[Hospital Cybersecurity – Presentation](https://marcobrandt.github.io/Linux-Course/hospital-cybersecurity.html#s1)
 
 ---
 

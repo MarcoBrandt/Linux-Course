@@ -9,6 +9,14 @@ This report covers Linux command-line basics, installation of a Debian virtual m
 
 ## x) Read and Summarize
 
+### Heinonen: How to Install Linux to VirtualBox?
+- Enable **VT-x** in the host UEFI/BIOS before installing VirtualBox.
+- Create a new VM in expert mode: select the Debian live ISO, Linux/Debian 64-bit, ≥2 GB RAM (preferably 4 GB), ≥20 GB disk, enable EFI, and disable unattended installation.
+- Boot the live ISO first to test connectivity and the desktop, then use the Calamares installer (English, Europe/Helsinki, Finnish keyboard, erase disk, set username + strong password).
+- After the first reboot, update the system with `sudo apt-get update && sudo apt-get upgrade`.
+- **My takeaway:** Starting with a live session is a safe way to verify hardware and network before committing to a permanent install. However on a VM you should install the software, just to make things simpler.
+[Read the article](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md)
+
 ### Karvinen (2020): Command Line Basics Revisited
 
 - Linux commands such as `pwd`, `ls`, `cd`, `less`, and `nano` make file navigation and editing efficient.

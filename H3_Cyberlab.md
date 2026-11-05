@@ -171,8 +171,19 @@ The recovered file displayed *“You've found the secret, well done!”* and con
 
 > Both password exercises succeeded: **Hashcat recovered `summer`** from the MD5 example, and **John the Ripper Jumbo recovered `butterfly`** from an encrypted ZIP archive. The exercises illustrate why short or common passwords are vulnerable to dictionary attacks. Testing should only be performed on owned or explicitly authorized practice targets.
 
-## References
-1.  Karvinen, T. (2020). [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/).
-2.  Karvinen, T. (2022). [Cracking Passwords with Hashcat](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/).
-3.  Karvinen, T. (2023). [Crack File Password With John](https://terokarvinen.com/2023/crack-file-password-with-john/).
-4.  Karvinen, T. (2026). [Cyber Security – Course Assignments](https://terokarvinen.com/cyber-security/).
+### References
+
+1. Heinonen, J. (2026). *How to Install Linux to VirtualBox?*  
+   https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md
+
+2. Karvinen, T. (2020). *Command Line Basics Revisited*.  
+   https://terokarvinen.com/2020/command-line-basics-revisited/
+
+3. Karvinen, T. (2022). *Cracking Passwords with Hashcat*.  
+   https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
+
+4. Karvinen, T. (2023). *Crack File Password With John*.  
+   https://terokarvinen.com/2023/crack-file-password-with-john/
+
+5. Karvinen, T. (2026). *Cyber Security – Course Assignments*.  
+   (See current course pages on terokarvinen.com, e.g. Information Security / Cyber Security 2026)

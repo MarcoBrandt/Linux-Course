@@ -171,6 +171,8 @@ The recovered file displayed *“You've found the secret, well done!”* and con
 
 > Both password exercises succeeded: **Hashcat recovered `summer`** from the MD5 example, and **John the Ripper Jumbo recovered `butterfly`** from an encrypted ZIP archive. The exercises illustrate why short or common passwords are vulnerable to dictionary attacks. Testing should only be performed on owned or explicitly authorized practice targets.
 
+---
+
 ### References
 
 1. Heinonen, J. (2026). *How to Install Linux to VirtualBox?*  

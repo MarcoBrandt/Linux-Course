@@ -58,7 +58,15 @@ The biggest advantage is having different cybersecurity sources in one place. Bl
 
 The main problem is information overload. Unread articles can pile up quickly, and different sources sometimes cover the same incident. Most of the feeds are also in English, and not all articles are directly related to technical cybersecurity.
 
-Overall, RSS is a useful way to follow the field, but I need to filter what I read.
+> Overall, RSS is a useful way to follow the field, but I need to filter what I read.
+
+### An interesting article from my RSS feed
+
+One interesting article I found was [*IoT- ja OT-ympäristöjen tietoturva alkaa laitteiden suojaamisesta*](https://www.kyberturvallisuuskeskus.fi/fi/uutiset/iot-ja-ot-ymparistojen-tietoturva-alkaa-laitteiden-suojaamisesta), published by the Finnish National Cyber Security Centre on November 3, 2026.
+
+The article describes cyberattacks against refrigeration systems in European stores. Attackers remotely changed temperature settings, causing food spoilage and financial damage. Some affected devices were outdated and no longer received security updates.
+
+> I found this particularly interesting because I work with medical devices in a hospital. Many of these devices are connected to networks, and some older systems can be difficult to update or replace. The article reminded me that cybersecurity is not only about protecting data. A compromised device can also affect physical operations and, in a hospital environment, potentially patient safety.
 
 ## f) Port scanning localhost with Nmap
 

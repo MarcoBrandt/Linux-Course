@@ -6,7 +6,7 @@ const tasks = [
   {id:'h3',name:'Linux & Password Cracking',detail:'Debian 13, Hashcat and John the Ripper Jumbo',file:'H3_Cyberlab.md'},
   {id:'h4',name:'Feed Me',detail:'RSS feeds, Nmap and port scanning',file:'H4_FeedMe.md'},
   {id:'h5',name:'Alice and Bob',detail:'GPG encryption, digital signatures and password management',file:'H5_AliceAndBob.md'},
-  {id:'h6',name:'Assignment 06',detail:'Kybermittari and cybersecurity maturity assessment',file:'H6_Mature.md'},
+  {id:'h6',name:'Mature',detail:'Kybermittari and cybersecurity maturity assessment',file:'H6_Mature.md'},
   {id:'h7',name:'SecuDream',detail:'Cyber crisis leadership in a hospital simulation',file:'H7_SecuDream.md'},
   {id:'h8',name:'Assignment 08',detail:'Upcoming course assignment',file:null}
 ];

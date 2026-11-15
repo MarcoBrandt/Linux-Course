@@ -8,7 +8,7 @@ const tasks = [
   {id:'h5',name:'Alice and Bob',detail:'GPG encryption, digital signatures and password management',file:'H5_AliceAndBob.md'},
   {id:'h6',name:'Mature',detail:'Kybermittari and cybersecurity maturity assessment',file:'H6_Mature.md'},
   {id:'h7',name:'SecuDream',detail:'Cyber crisis leadership in a hospital simulation',file:'H7_SecuDream.md'},
-  {id:'h8',name:'Assignment 08',detail:'Upcoming course assignment',file:null}
+  {id:'h8',name:'Bonus',detail:'Bonus course assignment',file:'H8_Bonus.md'}
 ];
 const page = document.getElementById('page-content');
 const nav = document.getElementById('assignment-nav');

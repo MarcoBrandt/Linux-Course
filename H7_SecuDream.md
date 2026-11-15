@@ -6,7 +6,7 @@
 
 I would take a course where I get to lead a cyber crisis in a simulated hospital. The scenario starts when the imaging worklist and image archive become unavailable. Urgent examinations are waiting, and the cause is unclear. Over five sessions, the same crisis develops from the first alert through recovery and a post-incident review.
 
-![Four hospital staff review paperwork and a laptop during a simulated imaging outage.](Workshop3.png)
+![Four hospital staff review paperwork and a laptop during a simulated imaging outage.](images/Workshop3.png)
 
 *Figure 1. The crisis team assesses an imaging outage during the first-hour exercise. AI-generated illustration.*
 
@@ -30,7 +30,7 @@ Students take on roles in the hospital crisis team, including crisis lead, IT le
 | 4 | **Continuity and Safe Recovery** | **Group exercise.** The image archive is back online, but some examinations performed during the outage are missing from it. The team decides which clinical workflows can resume, what checks are required, and who authorizes the return to normal operations. |
 | 5 | **Post-Incident Review** | **Facilitated debrief.** Students reconstruct the incident using their decision log and examine which decisions helped or delayed the response. They agree on three improvements and assign an owner and a deadline to each. |
 
-![A hospital team reviews the incident timeline on a whiteboard.](Workshop4_.png)
+![A hospital team reviews the incident timeline on a whiteboard.](images/Workshop4_.png)
 
 *Figure 2. The team reconstructs the incident timeline during the post-incident review. AI-generated illustration.*
 

@@ -12,3 +12,7 @@
 - [H4 g) — Detecting a port scan in Apache logs](https://github.com/MarcoBrandt/Linux-Course/blob/main/H4_FeedMe.md#g-detecting-the-scan-in-apache-logs-optional). I identified requests from the localhost scan in the Apache access and error logs.
 - [H4 h) — Comparing scan results in Apache logs](https://github.com/MarcoBrandt/Linux-Course/blob/main/H4_FeedMe.md#h-changing-the-scanning-method-optional). I ran a second localhost scan and checked whether it produced new HTTP entries in the same logs.
 - [H5 f) — Details of PGP](https://github.com/MarcoBrandt/Linux-Course/blob/main/H5_AliceAndBob.md#f-details-of-pgp--encrypted-and-signed-message). I encrypted and signed a message as Alice, then decrypted it and verified the signature as Bob.
+
+## References
+
+- Karvinen, T. (2026). [*Cyber Security – h8 Bonus*](https://terokarvinen.com/cyber-security/#h8-bonus). Course assignment.

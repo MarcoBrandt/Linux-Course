@@ -32,7 +32,7 @@ The topics include **Apple's Memory Integrity Enforcement**, a technology design
 
 > What interests me most is the connection between technical security and the real-world consequences of cybercrime. I work with healthcare information systems, where sensitive patient data must be protected. The Vastaamo case shows how serious a data breach can be for individuals and healthcare organisations.
 
-**Source:** [Herrasmieshakkerit — Tietomurron anatomia (0x3e)](https://podcasters.spotify.com/pod/show/herrasmieshakkerit/episodes/Tietomurron-anatomia--vieraana-Antti-Kurittu--0x3e-e3oh0km)
+**Source:** [Herrasmieshakkerit — Tietomurron anatomia (0x3e)](https://herrasmieshakkerit.fi/tietomurron-anatomia-vieraana-antti-kurittu-0x3e/)
 
 ---
 
@@ -55,7 +55,7 @@ The topics include **Apple's Memory Integrity Enforcement**, a technology design
 
 Finland's cybersecurity situation remained broadly stable in early 2026, but attack techniques continued to evolve. **Cybersecurity preparedness must be part of everyday operations**, not just a reaction to incidents.
 
-**Source:** [Traficom — NCSC News](https://www.kyberturvallisuuskeskus.fi/en/ncsc-news?limit=20&offset=0&query=&sort=updated)
+**Source:** [Traficom — Cybersecurity in the first half of 2026](https://www.traficom.fi/en/news/cybersecurity-first-half-2026-countering-cyber-threats-requires-stronger-preparedness-and-resourcing)
 
 ---
 
@@ -76,7 +76,7 @@ The sources complement each other: Traficom explains **what is happening now**, 
 
 > **My question:** How can hospitals maintain strong cybersecurity when critical medical devices cannot be updated without vendor approval?
 
-**Sources:** [Traficom / NCSC-FI](https://www.kyberturvallisuuskeskus.fi/en/ncsc-news?limit=20&offset=0&query=&sort=updated) · [Auz-Torres & Yoo (2026)](https://doi.org/10.1109/ACCESS.2026.3667073)
+**Sources:** [Traficom — Cybersecurity in the first half of 2026](https://www.traficom.fi/en/news/cybersecurity-first-half-2026-countering-cyber-threats-requires-stronger-preparedness-and-resourcing) · [Auz-Torres & Yoo (2026)](https://doi.org/10.1109/ACCESS.2026.3667073)
 
 ---
 
@@ -111,4 +111,7 @@ fastfetch
 
 ## References
 
-- Karvinen, T. (2026). [Cyber Security – Course Assignments](https://terokarvinen.com/cyber-security/).
+- Karvinen, T. (2026). [*Cyber Security – h2 Scene*](https://terokarvinen.com/cyber-security/#h2-scene). Course assignment.
+- Herrasmieshakkerit. (2025, November 27). [*Tietomurron anatomia, vieraana Antti Kurittu | 0x3e*](https://herrasmieshakkerit.fi/tietomurron-anatomia-vieraana-antti-kurittu-0x3e/). Podcast episode.
+- Traficom, National Cyber Security Centre Finland. (2026, June 16). [*Cybersecurity in the first half of 2026: countering cyber threats requires stronger preparedness and resourcing*](https://www.traficom.fi/en/news/cybersecurity-first-half-2026-countering-cyber-threats-requires-stronger-preparedness-and-resourcing).
+- Auz-Torres, M., & Yoo, S. G. (2026). [*Key Factors for Reducing Cybersecurity Risks in Healthcare: A Systematic Literature Review*](https://doi.org/10.1109/ACCESS.2026.3667073). *IEEE Access*, 14, 33002–33033. DOI 10.1109/ACCESS.2026.3667073.

@@ -43,8 +43,8 @@ One reason I would choose Kybermittari for a Finnish clinic is that it uses the 
 ## References
 
 - Karvinen, T. (2026). [*Cyber Security – h6 Mature*](https://terokarvinen.com/cyber-security/#h6-mature). Course assignment.
-- Traficom, National Cyber Security Centre Finland. [*Cybermeter User Guide*](https://terokarvinen.com/kybermittari/files/Kybermittari_Cybermeter_User_Guide_V1.pdf), version 1.0, pp. 9–14, 21 and 23.
-- Traficom, National Cyber Security Centre Finland. (2023, August 29). [*Kybermittari assessment workbook*](https://terokarvinen.com/kybermittari/files/Kybermittarin%20arviointity%C3%B6kalu_v2.1_20230829.xlsx), version 2.1. Source workbook for Figure 1.
+- Traficom, National Cyber Security Centre Finland. (n.d.). [*Cybermeter User Guide*](https://terokarvinen.com/kybermittari/files/Kybermittari_Cybermeter_User_Guide_V1.pdf). Version 1.0, pp. 9–14, 21 and 23.
+- Traficom, National Cyber Security Centre Finland. (2023, August 29). [*Kybermittari assessment workbook*](https://terokarvinen.com/kybermittari/files/Kybermittarin%20arviointity%C3%B6kalu_v2.1_20230829.xlsx). Version 2.1. Source workbook for Figure 1.
 - National Institute of Standards and Technology. (2024). [*NIST Cybersecurity Framework 2.0: Quick-Start Guide for Creating and Using Organizational Profiles*](https://doi.org/10.6028/NIST.SP.1301). NIST SP 1301.
-- Center for Internet Security. [*CIS Critical Security Controls Implementation Groups*](https://www.cisecurity.org/controls/implementation-groups).
-- Center for Internet Security. [*CIS Critical Security Control 1: Inventory and Control of Enterprise Assets*](https://www.cisecurity.org/controls/inventory-and-control-of-enterprise-assets).
+- Center for Internet Security. (n.d.). [*CIS Critical Security Controls Implementation Groups*](https://www.cisecurity.org/controls/implementation-groups).
+- Center for Internet Security. (n.d.). [*CIS Critical Security Control 1: Inventory and Control of Enterprise Assets*](https://www.cisecurity.org/controls/inventory-and-control-of-enterprise-assets).

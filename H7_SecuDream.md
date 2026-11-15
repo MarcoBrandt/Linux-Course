@@ -37,7 +37,7 @@ Students take on roles in the hospital crisis team, including crisis lead, IT le
 ### Models and frameworks
 
 - **NIST SP 800-61 Rev. 3.** Students use NIST’s incident response guidance to structure the hospital’s response and recovery. The decision log captures what the team knew at the time, who made each decision, and when it should be reviewed. [NIST incident response guidance](https://doi.org/10.6028/NIST.SP.800-61r3)
-- **WHO After Action Review (AAR).** The final session uses this method to guide a discussion of what happened, what worked, what caused delays, and why. Students use the discussion to agree on specific improvements. [WHO After Action Review](https://www.who.int/emergencies/operations/emergency-response-reviews/after-action-review)
+- **WHO After Action Review (AAR).** The final session uses this method to guide a discussion of what happened, what worked, what caused delays, and why. Students use the discussion to agree on specific improvements. [WHO After Action Review](https://www.who.int/publications/i/item/WHO-WHE-CPI-2019.4)
 
 ### Guest speakers, excursion, and special event
 
@@ -49,6 +49,8 @@ Students take on roles in the hospital crisis team, including crisis lead, IT le
 
 I work with hospital imaging systems, where a technical outage can quickly affect patient care. I want to practise leading the response before the cause is known, communicating clearly as the situation changes, and deciding with clinical staff when a service is safe to use again. I would also like to test whether a change agreed on during the debrief works under pressure.
 
-### Assignment
+## References
 
-[Tero Karvinen – h7 SecuDream](https://terokarvinen.com/cyber-security/#h7-secudream)
+- Karvinen, T. (2026). [*Cyber Security – h7 SecuDream*](https://terokarvinen.com/cyber-security/#h7-secudream). Course assignment.
+- Nelson, A., Rekhi, S., Souppaya, M., & Scarfone, K. (2025). [*Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile*](https://doi.org/10.6028/NIST.SP.800-61r3). NIST SP 800-61 Rev. 3.
+- World Health Organization. (2019). [*Guidance for after action review (AAR)*](https://www.who.int/publications/i/item/WHO-WHE-CPI-2019.4). WHO/WHE/CPI/2019.4.

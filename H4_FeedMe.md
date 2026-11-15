@@ -13,7 +13,7 @@ In this Finnish Supreme Court case, a 17-year-old scanned IP addresses belonging
 
 The important lesson is that a port scan **can** be part of a criminal attempt when there is an intention to break into a system. Port scanning is not automatically illegal in every situation. The offender also had to pay **75,000 Finnish marks** in compensation for the costs caused by investigating the incident; his age did not justify reducing the damages in this case.
 
-**Reference:** [KKO:2003:36 (Finlex)](https://finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36)
+**Reference:** [KKO:2003:36 (Finlex)](https://www.finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36)
 
 ## a) Installing an RSS reader
 
@@ -42,11 +42,11 @@ I added Schneier on Security for broader perspectives on security, privacy, tech
 
 ## d) Two additional cybersecurity sources
 
-**Finnish National Cyber Security Centre (NCSC-FI).** I chose this source because it provides official information about threats and incidents relevant to Finland. Most of my other sources focus on international news.
+**[Finnish National Cyber Security Centre (NCSC-FI)](https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista).** I chose this source because it provides official information about threats and incidents relevant to Finland. Most of my other sources focus on international news.
 
-**SecurityWeek.** I chose SecurityWeek because it covers enterprise cybersecurity, vulnerabilities and industry developments, often with more analysis than short breaking-news articles.
+**[SecurityWeek](https://www.securityweek.com/).** I chose SecurityWeek because it covers enterprise cybersecurity, vulnerabilities and industry developments, often with more analysis than short breaking-news articles.
 
-I also followed **BleepingComputer** for current security news. The Liferea screenshot confirms that this subscription was added.
+I also followed **[BleepingComputer](https://www.bleepingcomputer.com/)** for current security news. The Liferea screenshot confirms that this subscription was added.
 
 ## e) Benefits and disadvantages of RSS
 
@@ -180,6 +180,13 @@ This demonstrates that a SYN scan may avoid the **HTTP application-log detection
 
 ## References
 
-1.  Karvinen, T. (2026). [Cyber Security – Course Assignments](https://terokarvinen.com/cyber-security/).
-2.  Liferea. (n.d.). [Liferea – Linux Feed Reader](https://lzone.de/liferea/).
-3.  Nmap Project. (n.d.). [Nmap Reference Guide](https://nmap.org/book/man.html).
+- Karvinen, T. (2026). [*Cyber Security – h4 Feed me*](https://terokarvinen.com/cyber-security/#h4-feed-me). Course assignment.
+- Supreme Court of Finland. (2003, April 8). [*KKO:2003:36*](https://www.finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36). Finlex.
+- Liferea. (n.d.). [*Liferea – Linux Feed Reader*](https://lzone.de/liferea/).
+- Nmap Project. (n.d.). [*Nmap Reference Guide*](https://nmap.org/book/man.html).
+- Krebs, B. (n.d.). [*Krebs on Security*](https://krebsonsecurity.com/feed/). RSS feed.
+- Schneier, B. (n.d.). [*Schneier on Security*](https://www.schneier.com/feed/atom/). Atom feed.
+- Traficom, National Cyber Security Centre Finland. (n.d.). [*Ajankohtaista*](https://www.kyberturvallisuuskeskus.fi/fi/ajankohtaista).
+- SecurityWeek. (n.d.). [*SecurityWeek*](https://www.securityweek.com/).
+- BleepingComputer. (n.d.). [*BleepingComputer*](https://www.bleepingcomputer.com/).
+- Traficom, National Cyber Security Centre Finland. (2026, November 3). [*IoT- ja OT-ympäristöjen tietoturva alkaa laitteiden suojaamisesta*](https://www.kyberturvallisuuskeskus.fi/fi/uutiset/iot-ja-ot-ymparistojen-tietoturva-alkaa-laitteiden-suojaamisesta).

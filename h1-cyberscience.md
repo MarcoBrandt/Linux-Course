@@ -238,13 +238,12 @@ echo -n '==gCh8mclRFIs8GbsVGS' | rev | base64 -d
 
 ## References
 
-1. Auz-Torres, M. & Yoo, S. G. (2026). *Key Factors for Reducing Cybersecurity Risks in Healthcare: A Systematic Literature Review*. **IEEE Access**, 14, 33002–33033. https://doi.org/10.1109/ACCESS.2026.3667073
-2. Karvinen, T. *Cyber Security — course assignments*. https://terokarvinen.com/cyber-security/
-3. Karvinen, T. *Start Your Research with a Review Article*. https://terokarvinen.com/review-article/
-4. Karvinen, T. (2026). [Cyber Security – Course Assignments](https://terokarvinen.com/cyber-security/).
-5. Publication Forum (JUFO). *IEEE Access*, JUFO ID 78297. https://jfp.csc.fi/jufoportaali?Jufo_ID=78297
-6. University of Vaasa research portal (2026). *IEEE Access publication channel details (JUFO level 1)*. https://uwasa.cris.fi/fi/publications/541e0759-76a0-44cf-86d3-ef082a49d125
-7. HUS (2026). *HUS year 2025*. https://www.hus.fi/en/about-us/annual-reports/hus-year-2025
-8. HUS. *About us*. https://www.hus.fi/en/about-us
-9. HUS (4 December 2024). *Kaksi HUSin työntekijää katseli luvatta tietoja*. https://www.hus.fi/ajankohtaista/kaksi-husin-tyontekijaa-katseli-luvatta-tietoja
-10. HUS (9 April 2026). *HUSissa selvitetty alkuvuonna kolmea henkilötietojen tietoturvaloukkausta*. https://www.hus.fi/ajankohtaista/husissa-selvitetty-alkuvuonna-kolmea-henkilotietojen-tietoturvaloukkausta
+- Auz-Torres, M., & Yoo, S. G. (2026). [*Key Factors for Reducing Cybersecurity Risks in Healthcare: A Systematic Literature Review*](https://doi.org/10.1109/ACCESS.2026.3667073). *IEEE Access*, 14, 33002–33033. DOI 10.1109/ACCESS.2026.3667073.
+- Karvinen, T. (2026). [*Cyber Security – h1 CyberScience*](https://terokarvinen.com/cyber-security/#h1-cyberscience). Course assignment.
+- Karvinen, T. (n.d.). [*Start Your Research with a Review Article*](https://terokarvinen.com/review-article/).
+- Publication Forum (JUFO). (n.d.). [*IEEE Access*](https://jfp.csc.fi/jufoportaali?Jufo_ID=78297). JUFO ID 78297.
+- HUS. (2026). [*HUS year 2025*](https://www.hus.fi/en/about-us/annual-reports/hus-year-2025).
+- HUS. (n.d.). [*About us*](https://www.hus.fi/en/about-us).
+- HUS. (2024, December 4). [*Kaksi HUSin työntekijää katseli luvatta tietoja*](https://www.hus.fi/ajankohtaista/kaksi-husin-tyontekijaa-katseli-luvatta-tietoja).
+- HUS. (2026, April 9). [*HUSissa selvitetty alkuvuonna kolmea henkilötietojen tietoturvaloukkausta*](https://www.hus.fi/ajankohtaista/husissa-selvitetty-alkuvuonna-kolmea-henkilotietojen-tietoturvaloukkausta).
+- Debian Project. (n.d.). [*Installing Debian via the Internet*](https://www.debian.org/distrib/netinst).

@@ -361,9 +361,9 @@ When Bob receives the message, he uses his private key to recover the session ke
 
 ## References
 
-1. Schneier, B. (2015). *Applied Cryptography: Protocols, Algorithms, and Source Code in C*. 20th Anniversary Edition. Wiley. Chapters 1.1 and 2.5. https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/
-2. Karvinen, T. (2023). *PGP – Send Encrypted and Signed Message – gpg*. https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
-3. Karvinen, T. (2026). *Cyber Security – ICB705AS3YE-2*, H5 Alice and Bob. https://terokarvinen.com/cyber-security/#h5-alice-and-bob
-4. IETF (2018). RFC 8446: *The Transport Layer Security (TLS) Protocol Version 1.3*. https://www.rfc-editor.org/rfc/rfc8446
-5. GnuPG Project. *The GNU Privacy Guard Documentation*. https://gnupg.org/documentation/
-6. passwordstore.org. *pass – the standard unix password manager*. https://www.passwordstore.org/
+- Karvinen, T. (2026). [*Cyber Security – h5 Alice and Bob*](https://terokarvinen.com/cyber-security/#h5-alice-and-bob). Course assignment.
+- Schneier, B. (2015). [*Applied Cryptography: Protocols, Algorithms, and Source Code in C*](https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/). 20th Anniversary Edition. Wiley. Sections 1.1 and 2.5.
+- Karvinen, T. (2023). [*PGP – Send Encrypted and Signed Message – gpg*](https://terokarvinen.com/2023/pgp-encrypt-sign-verify/).
+- Rescorla, E. (2018). [*The Transport Layer Security (TLS) Protocol Version 1.3*](https://www.rfc-editor.org/info/rfc8446/). RFC 8446.
+- GnuPG Project. (n.d.). [*The GNU Privacy Guard Documentation*](https://gnupg.org/documentation/).
+- Password Store. (n.d.). [*pass – the standard unix password manager*](https://www.passwordstore.org/).

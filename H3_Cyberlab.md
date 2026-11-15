@@ -229,10 +229,11 @@ Both password exercises succeeded: **Hashcat recovered `summer`** from the MD5 e
 
 ## References
 
-1. Heinonen, J. (2026). [How to Install Linux to Virtualbox?](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md). *Assigned reading; summary pending.*
-2. Karvinen, T. (2020). [Command Line Basics Revisited](https://terokarvinen.com/2020/command-line-basics-revisited/).
-3. Karvinen, T. (2022). [Cracking Passwords with Hashcat](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/).
-4. Karvinen, T. (2023). [Crack File Password With John](https://terokarvinen.com/2023/crack-file-password-with-john/).
-5. Karvinen, T. (2026). [Cyber Security — Course Assignments](https://terokarvinen.com/cyber-security/).
+- Karvinen, T. (2026). [*Cyber Security – h3 Cyber lab*](https://terokarvinen.com/cyber-security/#h3-cyber-lab). Course assignment.
+- Heinonen, J. (2026). [*How to Install Linux to Virtualbox?*](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md). Assigned reading. Summary pending.
+- Karvinen, T. (2020). [*Command Line Basics Revisited*](https://terokarvinen.com/2020/command-line-basics-revisited/).
+- Karvinen, T. (2022). [*Cracking Passwords with Hashcat*](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/).
+- Karvinen, T. (2023). [*Crack File Password With John*](https://terokarvinen.com/2023/crack-file-password-with-john/).
+
 
 **AI assistance disclosure:** ChatGPT assisted with organizing and editing this report. Commands, settings, and verification results are based on my practical tests and terminal screenshots.

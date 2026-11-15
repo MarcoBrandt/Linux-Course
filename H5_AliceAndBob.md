@@ -357,9 +357,7 @@ When Bob receives the message, he uses his private key to recover the session ke
 
 ### My thoughts
 
-The interesting part is that Bob never needs to share his private key with anyone. Alice can send him a secure message using only his public key.
-
-I think this is a good example of why public-key encryption is useful. Encryption protects the message, while digital signatures help verify who sent it and whether it was modified. Both are important for secure communication.
+> The interesting part is that Bob never needs to share his private key with anyone. Alice can send him a secure message using only his public key. I think this is a good example of why public-key encryption is useful. Encryption protects the message, while digital signatures help verify who sent it and whether it was modified. Both are important for secure communication.
 
 ## References
 

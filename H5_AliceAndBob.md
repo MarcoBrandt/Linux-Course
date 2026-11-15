@@ -37,7 +37,7 @@
 - **Sending messages:** The sender encrypts the message with the recipient's public key and signs it with their own private key.
 - **Receiving messages:** The recipient decrypts the message with their private key and verifies the signature using the sender's public key.
 
-**My thoughts:** I think PGP is a good example of how encryption and digital signatures work together. The commands are quite simple, but managing and verifying the keys correctly is important for security.
+> **My thoughts:** I think PGP is a good example of how encryption and digital signatures work together. The commands are quite simple, but managing and verifying the keys correctly is important for security.
 
 ## a) Pubkey today – HTTPS and GitHub
 
@@ -127,14 +127,14 @@ In my test, I used Alice's public key to encrypt the message and her private key
 
 **Weaknesses:** GPG can be difficult to use correctly. Security depends on keeping private keys safe and verifying public keys. Traditional PGP message encryption does not provide forward secrecy, so a stolen private key may expose previously recorded encrypted messages.
 
-**My thoughts:** I think GPG provides strong security when used correctly. The biggest risk is probably the user making a mistake, not the encryption algorithm itself. Even strong encryption is useless if someone gets access to the private key.
+> **My thoughts:** I think GPG provides strong security when used correctly. The biggest risk is probably the user making a mistake, not the encryption algorithm itself. Even strong encryption is useless if someone gets access to the private key.
 
 ## c) Eve and Mallory
 
 - **Eve (eavesdropper)** tries to read messages without permission. PGP protects against this using encryption (`--encrypt --recipient`). The sender encrypts a message for the recipient using their public key, and the recipient decrypts it with their private key.
 - **Mallory (message modifier)** tries to change messages or pretend to be the sender. PGP uses digital signatures (`--sign`) to detect modifications. The sender signs with their private key, and the recipient verifies the signature using the sender's public key. Changing the signed message makes verification fail.
 
-**My thoughts:** Encryption keeps a message private, while digital signatures help verify who sent it and whether it was modified. Both are important for secure communication. A signature is only meaningful as proof of identity if the recipient has verified that the public key belongs to the correct sender.
+> **My thoughts:** Encryption keeps a message private, while digital signatures help verify who sent it and whether it was modified. Both are important for secure communication. A signature is only meaningful as proof of identity if the recipient has verified that the public key belongs to the correct sender.
 
 ## d) Password management
 
@@ -166,7 +166,7 @@ The `pass ls` output showed the entry `test/github`, confirming that the passwor
 
 ![Testing the pass password manager](images/H5_pass.png)
 
-**My thoughts:** I think password managers are useful because remembering different passwords for every service is difficult. Strong and unique passwords make it harder for attackers to access several accounts after one password has leaked.
+> **My thoughts:** I think password managers are useful because remembering different passwords for every service is difficult. Strong and unique passwords make it harder for attackers to access several accounts after one password has leaked.
 
 ## e) Refer to sources
 

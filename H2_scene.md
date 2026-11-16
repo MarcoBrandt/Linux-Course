@@ -82,7 +82,7 @@ The sources complement each other: Traficom explains **what is happening now**, 
 
 ## d) Download Debian
 
-I used a Debian 13 (Trixie) installation ISO as local installation media in Virtual Machine Manager.
+I used the [Debian 13.7.0 (Trixie) amd64 netinst ISO](https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-13.7.0-amd64-netinst.iso) as local installation media in Virtual Machine Manager. Debian lists the installation images on its [Trixie installation page](https://www.debian.org/releases/trixie/debian-installer/).
 
 ## e) Voluntary Bonus — Debian 13 Virtual Machine
 
@@ -115,6 +115,7 @@ fastfetch
 
 ## References
 
+- Debian Project. (n.d.). [*Debian “trixie” Installation Information*](https://www.debian.org/releases/trixie/debian-installer/).
 - Karvinen, T. (2026). [*Cyber Security – h2 Scene*](https://terokarvinen.com/cyber-security/#h2-scene). Course assignment.
 - Herrasmieshakkerit. (2025, November 27). [*Tietomurron anatomia, vieraana Antti Kurittu | 0x3e*](https://herrasmieshakkerit.fi/tietomurron-anatomia-vieraana-antti-kurittu-0x3e/). Podcast episode.
 - Traficom, National Cyber Security Centre Finland. (2026, June 16). [*Cybersecurity in the first half of 2026: countering cyber threats requires stronger preparedness and resourcing*](https://www.traficom.fi/en/news/cybersecurity-first-half-2026-countering-cyber-threats-requires-stronger-preparedness-and-resourcing).

@@ -1,4 +1,4 @@
-# H1 CyberScience
+# H1 — CyberScience
 
 *Cyber Security — Haaga-Helia University of Applied Sciences*
 

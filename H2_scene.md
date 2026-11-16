@@ -80,7 +80,11 @@ The sources complement each other: Traficom explains **what is happening now**, 
 
 ---
 
-## Bonus — Debian 13 Virtual Machine
+## d) Download Debian
+
+I used a Debian 13 (Trixie) installation ISO as local installation media in Virtual Machine Manager.
+
+## e) Voluntary Bonus — Debian 13 Virtual Machine
 
 I installed **Debian GNU/Linux 13 (Trixie)** in a **QEMU/KVM virtual machine** as a practical environment for cybersecurity exercises. The installation was successful, and the system is running the KDE Plasma desktop.
 

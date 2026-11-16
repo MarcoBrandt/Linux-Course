@@ -1,4 +1,4 @@
-# H5 – Alice and Bob
+# H5 — Alice and Bob
 
 **Course:** Cyber Security – ICB705AS3YE-2  
 **Author:** Marco Brandt  
@@ -67,6 +67,8 @@ gpg --list-secret-keys
 
 ![GPG key pair](images/H5_keys.png)
 
+*Figure 1. GPG lists the public and private key entries for the exercise.*
+
 ### Encrypt a message
 
 I created a short text file and encrypted it using Alice's public key.
@@ -80,6 +82,8 @@ cat secret.asc
 The result was an ASCII-armored encrypted PGP message, which was not readable as ordinary text.
 
 ![Encrypted PGP message](images/H5_encrypted.png)
+
+*Figure 2. The encrypted message is stored in ASCII-armored PGP format.*
 
 ### Decrypt and verify
 
@@ -99,9 +103,13 @@ This is my secret message for H5 cybersecurity assignment.
 
 ![Decrypted message](images/H5_decrypted.png)
 
+*Figure 3. The decrypted file contains the original plaintext message.*
+
 The SHA-256 hashes of `secret.txt` and `decrypted.txt` matched, confirming that the decrypted file contained exactly the same bytes as the original.
 
 ![SHA-256 verification](images/H5_sha256.png)
+
+*Figure 4. Matching SHA-256 hashes confirm that the original and decrypted files contain the same bytes.*
 
 ### How different parties use keys
 
@@ -166,6 +174,8 @@ The `pass ls` output showed the entry `test/github`, confirming that the passwor
 
 ![Testing the pass password manager](images/H5_pass.png)
 
+*Figure 5. The password store lists the `test/github` entry created for the exercise.*
+
 > **My thoughts:** I think password managers are useful because remembering different passwords for every service is difficult. Strong and unique passwords make it harder for attackers to access several accounts after one password has leaked.
 
 ## e) Refer to sources
@@ -193,6 +203,8 @@ Both users now had their own public and private keys.
 
 ![Alice and Bob key generation](images/H5_f_generate.png)
 
+*Figure 6. GPG generates separate key pairs for Alice and Bob.*
+
 ### Checking the keys
 
 I checked the keys using:
@@ -205,6 +217,8 @@ gpg --homedir ~/h5-pgp/bob --list-keys
 The keyrings showed the users' own keys and, after importing, the other user's public key.
 
 ![Alice and Bob GPG keys](images/H5_f_keys.png)
+
+*Figure 7. The GPG key listings show the keys used in the Alice and Bob exercise.*
 
 ### Exchanging public keys
 
@@ -268,6 +282,8 @@ The original message was no longer readable.
 
 ![Public key exchange and encrypted message](images/H5_f_import_encrypt.png)
 
+*Figure 8. The terminal shows the public key import and the resulting encrypted message.*
+
 ### Decrypting and verifying the signature
 
 Bob decrypted the message using his private key:
@@ -301,6 +317,8 @@ Hello Bob! This is a signed and encrypted message from Alice.
 ```
 
 ![Decryption and signature verification](images/H5_f_verify.png)
+
+*Figure 9. Bob decrypts the message, and GPG confirms that Alice’s signature is valid.*
 
 ### Results
 

@@ -1,4 +1,4 @@
-# H6 Mature
+# H6 — Mature
 
 ## x) Reading and summary
 

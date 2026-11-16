@@ -1,4 +1,4 @@
-# H4 – Feed Me
+# H4 — Feed Me
 
 **Cyber Security – 2026 | Haaga-Helia**  
 **Environment:** CachyOS (RSS reader) and Debian 13 virtual machine (Nmap laboratory)
@@ -27,6 +27,8 @@ liferea
 In Liferea, I used **New Subscription** to add cybersecurity feeds. The screenshot shows Liferea running and displaying articles from Krebs on Security, along with other subscriptions.
 
 ![Liferea displaying cybersecurity RSS news](images/liferea-rss.png)
+
+*Figure 1. Liferea displays articles from Krebs on Security and lists the other feeds in the sidebar.*
 
 ## b) Krebs on Security
 
@@ -102,6 +104,8 @@ Both ports, **80/tcp** and **631/tcp**, were open during this test.
 
 ![Internet disconnected and localhost scan](images/LinkState.png)
 
+*Figure 2. The terminal shows the disconnected network interface and the results of the localhost test.*
+
 After the test, I re-enabled the network interface:
 
 ```bash
@@ -135,7 +139,11 @@ Nmap now identified **80/tcp open** (Apache httpd 2.4.69) and **631/tcp open** (
 
 ![Checking Nmap and Apache on Debian](images/Apache.png)
 
+*Figure 3. Terminal output from the Nmap and Apache checks on the Debian virtual machine.*
+
 ![Nmap identifies Apache and CUPS](images/NmapApache.png)
+
+*Figure 4. The scan after Apache started identifies HTTP on port 80 and CUPS on port 631.*
 
 ### Results
 
@@ -156,6 +164,8 @@ The access log showed many requests from `127.0.0.1`, including `GET`, `POST`, `
 
 ![Nmap HTTP requests in Apache access log](images/ApacheNmap.png)
 
+*Figure 5. The Apache access log shows HTTP requests from the localhost scan.*
+
 ## h) Changing the scanning method (optional)
 
 I compared the previous `-A` scan with a TCP SYN scan that did not run HTTP service-detection scripts:
@@ -170,7 +180,11 @@ The SYN scan found **80/tcp** and **631/tcp** open, completing in **0.09 seconds
 
 ![SYN scan of ports 80 and 631](images/NmappingPorts.png)
 
+*Figure 6. The second localhost scan reports ports 80 and 631 as open.*
+
 ![Apache access and error log evidence](images/AccessError.png)
+
+*Figure 7. The Apache access and error logs were checked after the second localhost scan.*
 
 This demonstrates that a SYN scan may avoid the **HTTP application-log detection method** used in part g. It does **not** mean the scan is invisible: firewalls and network monitoring tools can still detect the network traffic.
 

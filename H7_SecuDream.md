@@ -1,4 +1,4 @@
-# H7 — SecuDream™ – Cyber Crisis Leadership
+# H7 — SecuDream
 
 *From First Alert to Lessons Learned*
 

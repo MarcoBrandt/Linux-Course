@@ -31,7 +31,17 @@ This report covers Linux command-line basics, installation and configuration of 
 
 [Read the article](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/)
 
-> **Reading-list note:** The assigned Heinonen (2026) article, [How to Install Linux to Virtualbox?](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md), still needs a reading summary here. I did not invent a summary without verifying the article's contents.
+### Heinonen (2026): How to Install Linux to VirtualBox?
+
+Heinonen provides a step-by-step guide to installing Debian 13 in a VirtualBox virtual machine. The guide begins with enabling hardware virtualization in BIOS/UEFI and downloading VirtualBox and the Debian Live ISO.
+
+The next steps cover creating a virtual machine, allocating RAM, CPU cores and disk space, and configuring EFI. The guide recommends 4 GB of RAM and explains how to skip unattended installation.
+
+The installation begins by testing Debian in a live environment before using the Calamares installer. After selecting the language, location, keyboard layout and user account, Debian is installed on the virtual disk. Finally, the system is rebooted and updated using `apt-get update` and `apt-get upgrade`.
+
+Although I used QEMU/KVM instead of VirtualBox, the guide covers many of the same principles, including resource allocation, virtualization settings and operating system installation.
+
+[Read the article](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md)
 
 ---
 
@@ -230,7 +240,7 @@ Both password exercises succeeded: **Hashcat recovered `summer`** from the MD5 e
 ## References
 
 - Karvinen, T. (2026). [*Cyber Security – h3 Cyber lab*](https://terokarvinen.com/cyber-security/#h3-cyber-lab). Course assignment.
-- Heinonen, J. (2026). [*How to Install Linux to Virtualbox?*](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md). Assigned reading. Summary pending.
+- Heinonen, J. (2026). [*How to Install Linux to Virtualbox?*](https://github.com/johannaheinonen/johanna-test-repo/blob/main/module_1.md). Assigned reading.
 - Karvinen, T. (2020). [*Command Line Basics Revisited*](https://terokarvinen.com/2020/command-line-basics-revisited/).
 - Karvinen, T. (2022). [*Cracking Passwords with Hashcat*](https://terokarvinen.com/2022/cracking-passwords-with-hashcat/).
 - Karvinen, T. (2023). [*Crack File Password With John*](https://terokarvinen.com/2023/crack-file-password-with-john/).

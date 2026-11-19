@@ -105,32 +105,38 @@ HUS has publicly reported cases in which employees accessed personal or patient 
 
 ### Risk identification
 
+The following figures are **fictional estimates for a classroom exercise**, not HUS financial data, incident frequencies, actuarial probabilities, or an internal risk assessment. The annual likelihoods are illustrative assumptions, and the euro amounts represent hypothetical costs **if the event occurs**. They are used to compare two scenarios, not to predict actual losses.
+
 #### Risk 1: Unauthorised access by an insider
 
 - **Threat:** An employee deliberately views personal or patient data without a legitimate work-related reason.
 - **Hypothetical scenario:** An employee uses their own valid credentials to access information about someone outside their care responsibilities. A later review of access logs identifies the unauthorised activity.
-- **Likelihood:** **4 / 5** — high, mainly because HUS has already documented similar incidents. This is a subjective exercise estimate, not a measured probability.
-- **Impact:** **4 / 5** — potentially serious privacy harm, notification and investigation costs, and damage to trust.
-- **Risk score:** **4 × 4 = 16**.
+- **Estimated annual likelihood:** **20%** (illustrative, not measured). Publicly reported cases show the scenario is plausible, but do not establish this probability.
+- **Estimated financial impact per incident:** **€100,000** (illustrative), covering investigation, access-log review, legal and notification work, and staff time. Privacy harm and loss of trust cannot be fully expressed in euros.
+- **Illustrative expected annual loss:** **0.20 × €100,000 = €20,000**.
+- **Qualitative risk rating:** Likelihood **4/5**, impact **4/5**, score **16/25**. These ordinal scores are separate from the percentage and euro estimates.
 
 #### Risk 2: Ransomware disrupting clinical operations
 
 - **Threat:** Malware disrupts hospital IT services and may also compromise confidential data.
 - **Hypothetical scenario:** An attacker gains access through phishing or stolen credentials and tries to deploy ransomware. If safeguards fail, services could become unavailable and patient care could be delayed. Data theft is another possible consequence. **This is not a claim that Apotti has been compromised or that any specific HUS network path is currently exploitable.**
-- **Likelihood:** **3 / 5** — possible, based on general healthcare-sector threats rather than any verified HUS-specific exposure.
-- **Impact:** **5 / 5** — severe worst-case consequences could include disruption of critical care, privacy breaches and high recovery costs.
-- **Risk score:** **3 × 5 = 15**.
+- **Estimated annual likelihood:** **10%** (illustrative, not measured), based on a hypothetical successful disruption rather than the frequency of attempted attacks.
+- **Estimated financial impact per incident:** **€2,000,000** (illustrative), representing incident response, system restoration, overtime, service disruption, and recovery work. Patient-safety consequences are not adequately captured by this figure.
+- **Illustrative expected annual loss:** **0.10 × €2,000,000 = €200,000**.
+- **Qualitative risk rating:** Likelihood **3/5**, impact **5/5**, score **15/25**. These ordinal scores are separate from the percentage and euro estimates.
 
 ### Risk comparison
 
-Likelihood and impact are scored on a 1–5 scale. Higher numbers mean greater risk. These scores are illustrative estimates only.
+| Risk | Annual likelihood (assumed) | Impact if realised (assumed) | Illustrative expected annual loss | Qualitative score |
+| --- | ---: | ---: | ---: | ---: |
+| **Risk 1: Unauthorised insider access** | 20% | €100,000 | €20,000 | 16/25 |
+| **Risk 2: Ransomware disruption** | 10% | €2,000,000 | €200,000 | 15/25 |
 
-| Risk                                    | Likelihood | Impact | Risk score |
-| --------------------------------------- | ---------: | -----: | ---------: |
-| **Risk 1: Unauthorised insider access** |        4   |    4   |     **16** |
-| **Risk 2: Ransomware disruption**       |        3   |    5   |     **15** |
+The expected annual loss is calculated as **assumed annual probability × assumed loss per incident**. This simplified single-event model does not account for multiple incidents, uncertainty ranges, correlated risks, or non-financial consequences.
 
-In this exercise the highest-priority risk is Risk 1 (unauthorised insider access).
+The qualitative 1–5 matrix ranks Risk 1 slightly higher (16 versus 15), whereas the illustrative euro-based comparison gives Risk 2 a higher expected annual loss (€200,000 versus €20,000). This difference shows why ordinal scores and monetary estimates should not be treated as interchangeable. In a real hospital, prioritisation would also depend on patient safety, service criticality, evidence-based probabilities, and the effectiveness of existing safeguards.
+
+For the META exercise below, **Risk 1** remains the selected example for mitigation; this does not imply that ransomware is a lower operational priority.
 
 ### Risk treatment – META
 

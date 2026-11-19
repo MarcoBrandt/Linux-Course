@@ -137,14 +137,14 @@ In my test, I used Alice's public key to encrypt the message and her private key
 
 > **My thoughts:** I think GPG provides strong security when used correctly. The biggest risk is probably the user making a mistake, not the encryption algorithm itself. Even strong encryption is useless if someone gets access to the private key.
 
-## c) Eve and Mallory
+### Eve and Mallory: Threats to Secure Communication
 
 - **Eve (eavesdropper)** tries to read messages without permission. PGP protects against this using encryption (`--encrypt --recipient`). The sender encrypts a message for the recipient using their public key, and the recipient decrypts it with their private key.
 - **Mallory (message modifier)** tries to change messages or pretend to be the sender. PGP uses digital signatures (`--sign`) to detect modifications. The sender signs with their private key, and the recipient verifies the signature using the sender's public key. Changing the signed message makes verification fail.
 
 > **My thoughts:** Encryption keeps a message private, while digital signatures help verify who sent it and whether it was modified. Both are important for secure communication. A signature is only meaningful as proof of identity if the recipient has verified that the public key belongs to the correct sender.
 
-## d) Password management
+## c) Password management
 
 ### Why use a password manager?
 
@@ -178,12 +178,12 @@ The `pass ls` output showed the entry `test/github`, confirming that the passwor
 
 > **My thoughts:** I think password managers are useful because remembering different passwords for every service is difficult. Strong and unique passwords make it harder for attackers to access several accounts after one password has leaked.
 
-## e) Refer to sources
+## Source references
 
 Done. I reviewed the source references for H0–H5 and added relevant references where needed.
 
 
-## f) Details of PGP – Encrypted and Signed Message
+## d) Voluntary: Details of PGP – Encrypted and Signed Message
 
 I tested encrypted and signed PGP communication on my Debian 13 virtual machine using GPG. I simulated two users, Alice and Bob, by creating separate GPG directories for both of them.
 
